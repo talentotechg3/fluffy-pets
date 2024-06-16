@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Fluffy Pets - Registro</title>
+        <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../static/css/responsive.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
+        <script src="../static/js/register.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--==============================header=================================-->
+        <div class="main">
+          <div class="over-head"></div>
+          <div class="div-content">
+            <header>
+                <div class="container">
+                     <div class="navbar navbar_ clearfix">
+                        <div class="navbar-inner">      
+                              <div class="clearfix">
+                                <h1 class="brand"><a href="../templates/home.html"><img src="../static/img/logo.png" alt=""></a><span>Fluffy Pets</span></h1> 
+                                <div class="nav-collapse nav-collapse_ collapse">
+                                    <ul class="nav sf-menu clearfix">
+                                      <li><a href="../templates/home.html">Home</a></li>
+                                      <li class="active"><a href="../templates/register.html">Registro</a></li>
+                                      <li><a href="../templates/consult.html">Consultas</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                         </div>  
+                     </div>
+                </div>
+            </header>
+             <!--==============================contenido=================================-->
+            <div class="container"> 
+                <div class="row">
+                     <article class="span12 clearfix">
+                        <h2 class="bgh2">Registrate en Fluffy Pets</h2>
+                     </article>
+                     <!--<form>-->
+                        <h3>Registra tus datos personales</h3> 
+                        <label>Número de Identificación</label> 
+                        <input type="number" id="id" min="0" /> 
+                        
+                        <label>Nombre completo</label> 
+                        <input type="text" id="name" /> 
+                        
+                        <label>Correo electrónico</label> 
+                        <input type="email" id="email" /> 
+                        
+                        <label>Celular</label> 
+                        <input type="tel" id="phone" /> 
+                        <br></br>
+                        
+                        <h3>Registra los datos de tu mascota</h3>
+                        <label>Nombre</label> 
+                        <input type="text" id="petName" />
+                        
+                        <label for="pets">Tipo de mascota</label>
+                            <select id="pets" name="pets">
+                              <option value="select_pet">Elige una opción*</option>
+                              <option value="dog">Perro</option>
+                              <option value="cat">Gato</option>
+                              <option value="fish">Pez</option>
+                              <option value="rabbit">Conejo</option>
+                            </select>
+                        <label>Fecha de nacimiento</label> 
+                        <input type="date" id="birthday" />
+                        
+                        <br></br>
+                        <button onClick="register()" >Registrar</button>
+                        <button>Regresar</button>
+                        
+                    <!--</form>-->
+                    <article class="span12 clearfix"><div class="divider"></div></article>
+                    
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--==============================footer=================================-->
+          <footer>
+            <div class="container">
+                 <div class="row">
+                     <article class="span6 left">
+                        <span>Fluffy Pets &copy; 2024 | Grupo 3 Talento Tech</span>
+                     </article>
+                 </div>
+            </div>
+          </footer>
+        </div>
+    </body>
+</html>

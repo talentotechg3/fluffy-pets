@@ -53,6 +53,9 @@ def register_user():
     return jsonify({"message": "Datos guardados exitosamente!"})
 
 
+@app.route("/consult_page")
+def consult_page():
+    return render_template("consult.html")
 
 # Endpoint para consultar usuario
 @app.route("/consult/<int:id>", methods=["GET"])

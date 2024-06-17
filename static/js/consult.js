@@ -1,3 +1,10 @@
+function home(){
+    window.location = "/";
+}
+
+function register(){
+    window.location = "/register_page";
+}
 
 function consult(){
     
@@ -11,7 +18,7 @@ function consult(){
     .then(response => response.json())
     .then(data => {
         
-        // Mostrar el datos del backend
+        // Mostrar los datos del backend
         var textarea = document.getElementById('datosRegistrados');
         // Formatear JSON
         textarea.value = JSON.stringify(data, null, 2); 

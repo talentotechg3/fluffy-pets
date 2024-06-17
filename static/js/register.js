@@ -1,3 +1,10 @@
+function home(){
+    window.location = "/";
+}
+
+function consult(){
+    window.location = "/consult_page";
+}
 
 function register(){
     

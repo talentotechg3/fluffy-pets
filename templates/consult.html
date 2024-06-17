@@ -22,8 +22,10 @@
                                 <h1 class="brand"><a href="../templates/home.html"><img src="../static/img/logo.png" alt=""></a><span>Fluffy Pets</span></h1> 
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu clearfix">
-                                      <li><a href="../templates/home.html">Home</a></li>
-                                      <li><a href="../templates/register.html">Registro</a></li>
+                                     <!-- <li><a href="../templates/home.html">Home</a></li>
+                                      <li><a href="../templates/register.html">Registro</a></li>-->
+                                      <li><a onclick=home()>Home</a></li>
+                                      <li><a onclick=register()>Registro</a></li>
                                       <li  class="active"><a href="../templates/consult.html">Consultas</a></li>
                                     </ul>
                                 </div>
@@ -44,12 +46,12 @@
                         <input type="number" id="id">
                         
                         <button onClick="consult()">Consultar</button>
-                        <h3>Datos registrados</h3>
                         
+                        <h3>Datos registrados</h3>
                         <textarea id="datosRegistrados"> </textarea> 
                         
                         <br></br>
-                        <button>Regresar</button>
+                        <button onClick="home()">Regresar</button>
                     </div>
                      <article class="span12 clearfix">
                          <div class="divider"></div>

@@ -22,9 +22,11 @@
                                 <h1 class="brand"><a href="../templates/home.html"><img src="../static/img/logo.png" alt=""></a><span>Fluffy Pets</span></h1> 
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu clearfix">
-                                      <li><a href="../templates/home.html">Home</a></li>
+                                    <!--  <li><a href="../templates/home.html">Home</a></li>-->
+                                      <li><a onclick=home()>Home</a></li>
                                       <li class="active"><a href="../templates/register.html">Registro</a></li>
-                                      <li><a href="../templates/consult.html">Consultas</a></li>
+                                    <!--<li><a href="../templates/consult.html">Consultas</a></li>-->
+                                      <li><a onClick=consult()>Consultas</a></li>                                      
                                     </ul>
                                 </div>
                               </div>
@@ -70,7 +72,7 @@
                         
                         <br></br>
                         <button onClick="register()" >Registrar</button>
-                        <button>Regresar</button>
+                        <button onClick="home()">Regresar</button>
                         
                     <!--</form>-->
                     <article class="span12 clearfix"><div class="divider"></div></article>

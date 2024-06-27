@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Fluffy Pets - Consulta de Registro</title>
+        <link rel="stylesheet" href="../static/css/bootstrap.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../static/css/responsive.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../static/css/style.css" type="text/css" media="all" />
+        <script src="../static/js/consult.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <!--==============================header=================================-->
+        <div class="main">
+          <div class="over-head"></div>
+          <div class="div-content">
+            <header>
+                <div class="container">
+                     <div class="navbar navbar_ clearfix">
+                        <div class="navbar-inner">      
+                              <div class="clearfix">
+                                <h1 class="brand"><a href="/"><img src="../static/img/logo.png" alt=""></a><span>Fluffy Pets</span></h1> 
+                                <div class="nav-collapse nav-collapse_ collapse">
+                                    <ul class="nav sf-menu clearfix">
+                                     <!-- <li><a href="../templates/home.html">Home</a></li>
+                                      <li><a href="../templates/register.html">Registro</a></li>-->
+                                      <li><a onclick=home()>Home</a></li>
+                                      <li><a onclick=register()>Registro</a></li>
+                                      <li  class="active"><a href="../templates/consult.html">Consultas</a></li>
+                                    </ul>
+                                </div>
+                              </div>
+                         </div>  
+                     </div>
+                </div>
+            </header>
+             <!--==============================contenido=================================-->
+            <div class="container"> 
+                <div class="row">
+                     <article class="span12 clearfix">
+                        <h2 class="bgh2">Consulta tu registro en Fluffy Pets</h2>
+                     </article>
+                     <div>
+                        <h3>Consulta por usuario</h3>
+                        <label>Número de Identificación</label> 
+                        <input type="number" id="id">
+                        
+                        <button onClick="consult()">Consultar</button>
+                        
+                        <h3>Datos registrados</h3>
+                        <textarea id="datosRegistrados"> </textarea> 
+                        
+                        <!--se muestran los datos
+                        <table class="table table-primary table-bordered table-striped table-hover">
+                        </table>-->
+                        
+                        <br></br>
+                        <button onClick="home()">Regresar</button>
+                    </div>
+                     <article class="span12 clearfix">
+                         <div class="divider"></div>
+                    </article>
+                </div>
+              </div>
+            </div>
+          </div>
+           <!--==============================footer=================================-->
+          <footer>
+            <div class="container">
+                 <div class="row">
+                     <article class="span6 left">
+                        <span>Fluffy Pets &copy; 2024 | Grupo 3 Talento Tech</span>
+                     </article>
+                 </div>
+            </div>
+          </footer>
+        </div>
+    </body>
+</html>

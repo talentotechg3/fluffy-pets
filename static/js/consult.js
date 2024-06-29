@@ -7,10 +7,11 @@ function register(){
 }
 
 function consult(){
+    cleanData()
     let id_user = document.getElementById("id").value
     let obj_user = {
         "id": id_user,
-        "passw": "12345"
+       // "passw": "12345"
     }
     resp = fetch("/consult_user", {
         "method": "post",
@@ -19,13 +20,26 @@ function consult(){
     })
     .then(resp => resp.json())
     .then(data => {
-        //alert(data.name)
-        var textarea = document.getElementById("datosRegistrados")
-        textarea.value = JSON.stringify(data, null, 2);
+        
+        //var textarea = document.getElementById("datosRegistrados")
+        //textarea.value = JSON.stringify(data, null, 2);
+        if (data.status == "ok"){
+            var fila = '<tr><td>'+data.id+'</td><td>'+data.usuario+'</td><td>'+data.email+'</td><td>'+data.celular+'</td><td>'+data.nombre_mascota+'</td><td>'+data.tipo_mascota+'</td></tr>';
+            document.getElementById("resultData").innerHTML = fila;
+            document.getElementById("img-user").src = data.url_file 
+        }
+        else{
+            alert(data.name)
+        }
     })
     .catch(err =>{
         alert("Error consulta" + err)
     })
+}
+
+function cleanData(){
+    document.getElementById("resultData").innerHTML = ""
+    document.getElementById("img-user").src = ""
 }
 
 /*function consult(){

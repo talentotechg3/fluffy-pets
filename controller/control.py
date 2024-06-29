@@ -88,12 +88,12 @@ def func_consult_user():
         if path_file != None:
             url_file = "https://bucket-fluffy-pets.s3.us-east-2.amazonaws.com/" + path_file
         else:
-            url_file = "Sin imágen cargada"
+            url_file = ""
         response = {
             'status': "ok",
-            'Tipo mascota': result_data[0][5],
-            'Nombre mascota': result_data[0][4],
-            'Celular': result_data[0][3],
+            'tipo_mascota': result_data[0][5],
+            'nombre_mascota': result_data[0][4],
+            'celular': result_data[0][3],
             'email': result_data[0][2],
             'usuario': result_data[0][1],
             'id': result_data[0][0],

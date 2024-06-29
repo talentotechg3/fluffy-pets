@@ -48,13 +48,25 @@
                         <button onClick="consult()">Consultar</button>
                         
                         <h3>Datos registrados</h3>
-                        <textarea id="datosRegistrados"> </textarea> 
+                        <!--<textarea id="datosRegistrados" rows=10 cols=250> </textarea> <br></br>-->
                         
-                        <!--se muestran los datos
-                        <table class="table table-primary table-bordered table-striped table-hover">
-                        </table>-->
+                        <!--se muestran los datos-->
+                        <table id="resultTable" class="table table-primary table-bordered table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Número Identificación</th>
+                                    <th>Nombre Completo</th>
+                                    <th>Correo Electrónico</th>
+                                    <th>Celular</th>
+                                    <th>Mascota</th>
+                                    <th>Tipo de mascota</th>
+                                </tr>
+                            </thead>
+                           <tbody id="resultData"></tbody>
+                        </table>
                         
-                        <br></br>
+                        <img class="img-user" id="img-user" src=""/> <br></br>
+                        
                         <button onClick="home()">Regresar</button>
                     </div>
                      <article class="span12 clearfix">
